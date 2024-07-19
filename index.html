@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booth's Algorithm Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Booth's Algorithm Simulation</h2>
+      <div class="input-section">
+        <label for="factor1">Enter First Number:</label>
+        <input
+          type="text"
+          name="factor1"
+          id="factor1"
+          placeholder="Enter first number"
+        />
+        <br />
+        <br />
+        <label for="factor2">Enter Second Number:</label>
+        <input
+          type="text"
+          name="factor2"
+          id="factor2"
+          placeholder="Enter second number"
+        />
+        <br />
+        <br />
+        <button type="button" name="multiply" onclick="multiply()">
+          Multiply
+        </button>
+      </div>
+
+      <table id="results">
+        <thead>
+          <tr>
+            <th>AC</th>
+            <th>Q</th>
+            <th>Q<sub>1</sub></th>
+            <th>M</th>
+            <th>Operation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- add rows using dom -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
